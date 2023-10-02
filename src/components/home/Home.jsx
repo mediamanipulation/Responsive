@@ -5,8 +5,9 @@ const Home = () => {
   return (
     <div className="home-container">
       <section className="hero">
-        <div className='bg-Title'>Welcome to Mediamanipulation!</div>
+        <div className='bg-Title'>Welcome to Mediamanipulation</div>
         <div className='hd-Para'><h1>The beautiful city on the island of Crete.</h1></div>
+      <div className='spcr'></div>
         <button>Learn More</button>
       </section>
 

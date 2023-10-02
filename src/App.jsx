@@ -3,6 +3,8 @@ import './App.css';
 import Header from './components/header/Header';
 import MainContent from './components/maincontent/MainContent';
 import Footer from './components/footer/Footer';
+// import './assets/css/fonts.css';
+import './index.css'
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
