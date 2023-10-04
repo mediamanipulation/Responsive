@@ -24,14 +24,14 @@ const Navbar = () => {
 
   return (
     <nav className="navbar" ref={navbarRef}>
-      <Link to="/" className="navbar-brand">Mediamanipulation</Link>
+      <Link to="/" className="navbar-brand" onClick={() => setMenuOpen(false)}>Mediamanipulation</Link>
       
       <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </button>
 
       <div className={`menu-items ${menuOpen ? 'active' : ''}`}>
-        <Link to="/flight" className="menu-item" onClick={() => setMenuOpen(false)}>Art</Link>
+        <Link to="/art" className="menu-item" onClick={() => setMenuOpen(false)}>Art</Link>
         <Link to="/city" className="menu-item" onClick={() => setMenuOpen(false)}>Devlopment</Link>
         <Link to="/island" className="menu-item" onClick={() => setMenuOpen(false)}>Services</Link>
         <Link to="/food" className="menu-item" onClick={() => setMenuOpen(false)}>Contact</Link>

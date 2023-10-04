@@ -1,22 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from '../home/Home'; // Assume you have a Home component
-import Flight from '../flight/Flight'; // and so on for each page...
+import { Routes, Route } from 'react-router-dom';
+
+import Home from '../home/Home';
+import Art from '../art/Art';
 import City from '../city/City';
 import Island from '../island/Island';
 import Food from '../food/Food';
 
 const MainContent = () => {
   return (
-    <div>
-     <Routes>
+    <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/flight" element={<Flight />} />
+      <Route path="/art" element={<Art />} />
       <Route path="/city" element={<City />} />
       <Route path="/island" element={<Island />} />
       <Route path="/food" element={<Food />} />
-  </Routes>
-    </div>
+    </Routes>
   );
 }
 

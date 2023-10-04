@@ -4,10 +4,9 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-content">
-        <h4>About Chania</h4>
-        <p>The beautiful city on the island of Crete. Discover its magic!</p>
-      </div>
+  <div className="footer-content copyright-section"> {/* Add this */}
+    © 1996 mediamanipulation
+  </div>
       <div className="footer-content">
         <h4>Quick Links</h4>
         <ul className="footer-links">

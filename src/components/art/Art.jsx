@@ -1,7 +1,7 @@
 import React from 'react';
-import './Flight.css';
-
-const Flight = () => {
+import './Art.css';
+import ImageGallery from '../ImageGallery/index';
+const Art = () => {
   return (
     <div className="home-container">
       <section className="hero">
@@ -10,7 +10,9 @@ const Flight = () => {
         <button>Learn More</button>
       </section>
 
-      <section className="features">
+<ImageGallery />
+
+      {/* <section className="features">
         <div className="feature">
           <div className="feature-icon">🌆</div>
           <h3>Stunning Architecture</h3>
@@ -32,7 +34,7 @@ const Flight = () => {
         <h2>Interested in Visiting?</h2>
         <p>Sign up for our travel newsletter to get the latest updates.</p>
         <button>Sign Up Now</button>
-      </section>
+      </section> */}
 
       {/* <footer>
         © 2023 Chania Tourism. All Rights Reserved.
@@ -41,4 +43,4 @@ const Flight = () => {
   );
 }
 
-export default Flight;
+export default Art;
