@@ -6,7 +6,7 @@
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; 
   align-items: center;
   padding: 20px 10px;
   background-color: var(--footer-bg-color);
@@ -17,6 +17,9 @@
 
 .footer-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;  /* Stack content pieces vertically within each section */
+  align-items: flex-start; /* Align items to the start */
 }
 
 h4 {
@@ -28,10 +31,12 @@ h4 {
 
 .footer-links {
   list-style: none;
+  display: flex; /* Make links horizontal on desktop */
+  gap: 15px;
 }
 
 .footer-links li {
-  margin-bottom: 10px;
+  margin-bottom: 0; /* Reset the margin */
 }
 
 .footer-links a {
@@ -62,33 +67,34 @@ h4 {
 
 @media only screen and (max-width: 768px) {
   .footer {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     align-items: flex-start;
     padding: 15px;
   }
 
-  .footer-content, .social-links {
-    width: 100%; /* Take full width */
-    margin-bottom: 15px; /* Add spacing between stacked elements */
+  .footer-content {
+    width: 100%;
+    margin-bottom: 15px;
   }
 
   .footer-links {
-    flex-direction: column; /* Stack links vertically */
+    flex-direction: column; /* Make links vertical on mobile */
   }
 
   .footer-links li {
-    margin-right: 0; /* Reset margin for vertical stacking */
+    margin-bottom: 10px; /* Restore the margin */
   }
 
   h4 {
-    font-size: 16px; /* Reduce font size for smaller screens */
+    font-size: 16px;
   }
 
   .social-links a {
-    font-size: 18px; /* Slightly reduce font-size for icons */
+    font-size: 18px;
   }
 
   .copyright-section {
-    font-size: 12px; /* Reduce font size for smaller screens */
+    font-size: 12px;
+    margin-bottom: 15px;  /* Add spacing after the copyright section on mobile */
   }
 }
